@@ -3,10 +3,15 @@
   "main": "./lib/one-tab",
   "version": "0.3.0",
   "description": "Hide tabs if there is only one tab open in the pane",
+  "keywords": [
+      "tabs",
+      "tab",
+      "hide"
+  ],
   "repository": "https://github.com/blomma/one-tab",
   "license": "MIT",
   "engines": {
-    "atom": ">=0.x.0, <2.0.0"
+    "atom": ">=0.174.0, <2.0.0"
   },
   "dependencies": {}
 }
