@@ -2,9 +2,6 @@
 
 class OneTab
     activate: ->
-        atom.packages.onDidActivatePackage (p) ->
-            console.log p
-
         atom.packages.onDidActivateInitialPackages =>
             @subscriptions = new CompositeDisposable
             @subscriptions.add atom.workspace.observePanes (pane) =>
