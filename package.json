@@ -1,7 +1,7 @@
 {
   "name": "one-tab",
   "main": "./lib/one-tab",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Hide tabs if there is only one tab open in the pane",
   "keywords": [
     "tabs",
