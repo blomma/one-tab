@@ -3,3 +3,7 @@
 ## 0.2.0 - Fix deprecations for Atom 1.0 API
 
 ## 0.3.0 - Cleanup of code
+
+## 0.4.0 - Added keywords
+
+## 0.5.0 - Retain shadow around top border when hidding tab-bar
