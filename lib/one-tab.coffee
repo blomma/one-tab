@@ -12,26 +12,28 @@ class OneTab
 
     initPane: (pane) ->
         subscription = new CompositeDisposable
-
         subscription.add pane.onDidDestroy ->
             subscription.dispose()
 
         subscription.add pane.onDidAddItem =>
-            @handlePaneItemEvent pane
+            @updateTabBarVisibility pane
 
         subscription.add pane.onDidRemoveItem =>
-            @handlePaneItemEvent pane
+            @updateTabBarVisibility pane
 
-        @handlePaneItemEvent pane
+        @updateTabBarVisibility pane
 
-    handlePaneItemEvent: (pane) ->
+    updateTabBarVisibility: (pane) ->
         paneView = atom.views.getView pane
         tabView = paneView.querySelector '.tab-bar'
 
-        if pane.getItems().length == 1
-            tabView.setAttribute 'one-tab', tabView.style.height
-            tabView.style.height = "1px"
+        if pane.getItems().length is 1
+            tabView.setAttribute 'one-tab-height', tabView.style.height
+            tabView.style.height = '1px'
         else
-            tabView.style.height = tabView.getAttribute 'one-tab'
+            oldValue = tabView.getAttribute 'one-tab-height'
+            if oldValue isnt null
+                tabView.style.height = oldValue
+                tabView.removeAttribute 'one-tab-height'
 
 module.exports = new OneTab()
