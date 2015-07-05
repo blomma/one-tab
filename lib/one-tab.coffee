@@ -28,12 +28,12 @@ class OneTab
         tabView = paneView.querySelector '.tab-bar'
 
         if pane.getItems().length is 1
-            tabView.setAttribute 'one-tab-height', tabView.style.height
+            tabView.setAttribute 'data-one-tab-height', tabView.style.height
             tabView.style.height = '1px'
         else
-            oldValue = tabView.getAttribute 'one-tab-height'
+            oldValue = tabView.getAttribute 'data-one-tab-height'
             if oldValue isnt null
                 tabView.style.height = oldValue
-                tabView.removeAttribute 'one-tab-height'
+                tabView.removeAttribute 'data-one-tab-height'
 
 module.exports = new OneTab()
