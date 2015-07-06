@@ -4,3 +4,4 @@
 ## 0.4.0 - Added keywords
 ## 0.5.0 - Retain shadow around top border when hidding tab-bar
 ## 0.5.1 - Remove debug log
+## 0.6.0 - Cleanup and optimizations
