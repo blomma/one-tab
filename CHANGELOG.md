@@ -5,3 +5,4 @@
 ## 0.5.0 - Retain shadow around top border when hiding tab-bar
 ## 0.5.1 - Remove debug log
 ## 0.6.0 - Cleanup and optimizations
+## 0.7.0 - Reverse 'Retain shadow around top border when hiding tab-bar' for now
