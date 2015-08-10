@@ -1,3 +1,6 @@
+## 0.8.0
+* Moved style into external file
+
 ## 0.7.0
 * Reverse 'Retain shadow around top border when hiding tab-bar' for now
 
