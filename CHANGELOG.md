@@ -1,4 +1,4 @@
-## 0.8.0
+## MASTER
 * Moved style into external file
 
 ## 0.7.0
