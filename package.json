@@ -1,17 +1,17 @@
 {
-    "name": "one-tab",
-    "main": "./lib/one-tab",
-    "version": "0.7.0",
-    "description": "Hide tabs if there is only one tab open in the pane",
-    "keywords": [
-        "tabs",
-        "tab",
-        "hide"
-    ],
-    "repository": "https://github.com/blomma/one-tab",
-    "license": "MIT",
-    "engines": {
-        "atom": ">=1.0.0 <2.0.0"
-    },
-    "dependencies": {}
+  "name": "one-tab",
+  "main": "./lib/one-tab",
+  "version": "0.8.0",
+  "description": "Hide tabs if there is only one tab open in the pane",
+  "keywords": [
+    "tabs",
+    "tab",
+    "hide"
+  ],
+  "repository": "https://github.com/blomma/one-tab",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {}
 }
