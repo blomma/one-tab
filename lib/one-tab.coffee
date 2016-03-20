@@ -25,11 +25,10 @@ class OneTab
 
     updateTabBarVisibility: (pane) ->
         paneView = atom.views.getView pane
-        tabView = paneView.querySelector '.tab-bar'
 
         if pane.getItems().length is 1
-            tabView.setAttribute 'data-one-tab', true
+            paneView.setAttribute 'data-one-tab', true
         else
-            tabView.removeAttribute 'data-one-tab'
+            paneView.removeAttribute 'data-one-tab'
 
 module.exports = new OneTab()
