@@ -1,3 +1,6 @@
+## 0.9.0
+* Minor optimization, add data attribute to pane view instead of tab view, this saves us one lookup
+
 ## 0.8.0
 * Moved style into external file
 
