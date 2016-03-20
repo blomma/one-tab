@@ -1,16 +1,17 @@
 {CompositeDisposable} = require 'atom'
 
 class OneTab
-    activate: ->
-        atom.packages.onDidActivateInitialPackages =>
-            @subscriptions = new CompositeDisposable
-            @subscriptions.add atom.workspace.observePanes (pane) =>
-                @initPane pane
+    activate: (state) ->
+        @subscriptions = new CompositeDisposable
+        @subscriptions.add atom.workspace.observePanes (pane) =>
+            @initPane pane
 
     deactivate: ->
         @subscriptions.dispose()
 
     initPane: (pane) ->
+        @updateTabBarVisibility pane
+
         subscription = new CompositeDisposable
         subscription.add pane.onDidDestroy ->
             subscription.dispose()
@@ -20,8 +21,6 @@ class OneTab
 
         subscription.add pane.onDidRemoveItem =>
             @updateTabBarVisibility pane
-
-        @updateTabBarVisibility pane
 
     updateTabBarVisibility: (pane) ->
         paneView = atom.views.getView pane
