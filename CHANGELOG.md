@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## **[v0.10.0]**
 ### Changed
 - Convert to ES6
+- Mayhaps more memory
 
 ## **[v0.9.0]** - 2016-03-20
 ### Changed
