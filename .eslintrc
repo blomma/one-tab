@@ -1,0 +1,12 @@
+{
+	"extends": "eslint-config-airbnb",
+
+	"globals": {
+		"atom" : false
+	},
+	"rules" : {
+		"indent" : [2, "tab"],
+		"no-unused-vars": ["error", { "vars": "all", "args": "none"}],
+		"import/no-unresolved" : [2, {"ignore": ["^atom"]}]
+	}
+}
